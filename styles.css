@@ -1,5 +1,22 @@
 .navBar {
     display: flex; 
     flex-direction: row;   
+    
+}
+footer{
+    position:fixed;
+    height:20vh;
+    bottom:0;
+    border: black solid 3px;
+    left: 0;
+    width: 100vw;
+    /* background-color: red; */
+    color: white;
+  
+}
+
+.sunImg{
+    width:100px;
+    height:100px; 
 }
     

@@ -1,5 +1,6 @@
 :root{
-    --border: orange solid 3px;
+    --border: #fff27c solid 3px;
+    --sun: #fff27c;
 }
 .navBar {
     display: flex; 
@@ -7,8 +8,11 @@
     
 }
 footer{
+    display:flex;
+    /* justify-content: center; */
+    align-items: center;
     position:fixed;
-    height:20vh;
+    height:15vh;
     bottom:0;
     border: black solid 3px;
     left: 0;
@@ -21,17 +25,23 @@ footer{
 
 .sunCount{
     display:flex;
-    flex-direction: column;
-    width:100px;
-    height:100px; 
-    background-image: url("images/sunlogoclear.png");
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width:7vw;
+    height:10vh; 
+    background:#fff27c;
+    border-radius:50%;
+    border:var(--border);
+    margin:2vw;
 
 }
 
 .checkedCount, .totalCount, .dashDivider{
-    border:var(--border);
+    /* border:var(--border); */
+    background:var(--sun);
     width:7vw;
-    height:4vh;
+    height:3vh;
     text-align: center;
 }
     
@@ -71,11 +81,7 @@ li > img {
     align-items: center;
     /* border: solid blue 1px; */
 
-<<<<<<< HEAD
-    background-image: url(images/Clouds.svg);
-=======
     background-image: url("images/Clouds.svg");
->>>>>>> a17451121cc65049ffc5973b762e03598ef117b4
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

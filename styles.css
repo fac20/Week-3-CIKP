@@ -4,12 +4,20 @@
 }
 .navBar {
     display: flex; 
+    justify-content: space-between;
     flex-direction: row;   
+    width:100vw;
+    position:fixed;
+    top:0;
+    border:var(--border);
     
 }
+/* .inputField{
+    
+} */
 footer{
     display:flex;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     position:fixed;
     height:15vh;
@@ -21,6 +29,9 @@ footer{
     color: black;
     font-size:1.7em;
   
+}
+.addImg{
+    width:20vw;
 }
 
 .sunCount{

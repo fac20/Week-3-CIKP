@@ -19,9 +19,9 @@ footer{
   
 }
 
-.sunImg{
+.sunCount{
     display:flex;
-    flex-direction: rows;
+    flex-direction: column;
     width:100px;
     height:100px; 
     background: url('/images /sun-image.png');

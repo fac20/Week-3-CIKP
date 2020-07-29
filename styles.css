@@ -24,7 +24,7 @@ footer{
     flex-direction: column;
     width:100px;
     height:100px; 
-    background-image: url("images /sunlogoclear.png");
+    background-image: url("images/sunlogoclear.png");
 
 }
 
@@ -71,7 +71,7 @@ li > img {
     align-items: center;
     /* border: solid blue 1px; */
 
-    background-image: url(/images/Clouds.svg);
+    background-image: url("images/Clouds.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

@@ -35,3 +35,46 @@ footer{
     text-align: center;
 }
     
+.img__bin {
+    width: 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #61CEEB;
+}
+
+
+li {
+    background-color: #FFFEFF;
+    border-radius: 5px;
+    margin-top: 9vh;
+    display: flex;
+    align-items: center;
+}
+
+li > p {
+    padding: 0 0.5rem;
+}
+
+li > img {
+    padding: 0 0.5rem;
+}
+
+.div-cloud {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid blue 1px; */
+
+    background-image: url(/images/Clouds.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50vw;
+    height: 50vh;
+}

@@ -24,7 +24,7 @@ footer{
     flex-direction: column;
     width:100px;
     height:100px; 
-    background: url('/images /sun-image.png');
+    background-image: 'images/sun-image.png';
 }
 
 .checkedCount, .totalCount, .dashDivider{

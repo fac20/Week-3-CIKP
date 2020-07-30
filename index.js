@@ -11,14 +11,22 @@ let totalCount = document.querySelector('#totalCount');
 let checkNum=0;
 let totalNum=0;
 
+checkCount.textContent = checkNum;
+
 addBtn.addEventListener('click',() => {
+
+    function updateDone() {
+        let done = cloudContainer.querySelectorAll("input:checked");
+        checkCount.textContent = done.length;
+    }
     if(text.value === ''){return;}
+    
     totalNum += 1;   
    
-checkCount.textContent = checkNum;
+    // checkCount.textContent = checkNum;
     totalCount.textContent = totalNum;
  
-   console.log(checkNum);
+   //console.log(checkNum);
    function addTemplate (){
        const domFragment = template.content.cloneNode(true);
        domFragment.querySelector("#cloud-p").textContent = text.value
@@ -28,19 +36,27 @@ checkCount.textContent = checkNum;
     
     addTemplate();
     text.value = "";
-    let done = cloudContainer.getElementsByClassName(".checkbox");
-    let checkbox = cloudContainer.querySelector("input[id=checkbox]")
+    //let done = cloudContainer.getElementsByClassName(".checkbox");
+
+    /*
+    let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]")
     checkbox.addEventListener ('click', event => {
         if (event.target.checked){
-            checkNum.textContent = done.length;
+            //checkNum.textContent = done.length;
             checkNum+= 1;
         // console.log(done);
-    }
+    }*/
          
-    
+let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]");
 
-}  )
-})
+checkboxes.forEach( x => x.addEventListener('click', () => {
+
+    //end of update function
+
+    updateDone();
+}
+));
+});
 
 
 
@@ -51,16 +67,7 @@ checkCount.textContent = checkNum;
 
 //in this listener, run update Done
 
-//let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]")
-//checkboxes.forEach(addEventListener('click', () => {
 
-        function updateDone() {
-        let done =.querySelectorAll("input:checked");
-        checkCount.textContent = done.length;
-    }
-    updateDone();
-
-}));
     
 //
 

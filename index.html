@@ -20,24 +20,23 @@
     <section>
       
         <!-- append document fragment/div cloud created with JS here -->
-        <ul>
+        <div id="cloud-container">
+
+        </div>
+        <template id="cloud-temp">
             <div class="div-cloud">
-                <li>
-                <!-- <img src="https://assets.dryicons.com/uploads/icon/svg/9955/918ce0ce-3d9c-471d-b501-eed375bde70d.svg"> -->
+              <div class="task-container">
 
                 <label for="checkbox"> </label>
                 <input type="checkbox" id="checkbox">
 
-                <p>This is where the task goes</p>
-                <img class="img__bin" src="https://assets.dryicons.com/uploads/icon/svg/3077/recycle_bin.svg">
-                <!-- <img class="img__bin" src="https://assets.dryicons.com/uploads/icon/svg/12737/b5c8ab0f-f97c-441d-a064-164899f5245f.svg">
-                <img class="img__bin" src="https://svgsilh.com/svg/148554.svg"> -->
-
-
-            </li>
+                <p id='cloud-p'>This is where the task goes</p>
+                <img id="img__bin" src="https://assets.dryicons.com/uploads/icon/svg/3077/recycle_bin.svg">
+            </div>
         </div>
+    </template>
             
-       </ul>
+  
     </section>
         
     
@@ -52,7 +51,7 @@
     <!-- end footer -->       
     <img src='images/addimg.png'  class='addImg' alt='image of addition sign'>
     <div id="enterTask">
-        <input type='text' id='inputField'>
+        <input type='text' id='inputField' required>
         <button id='add'>Add</button>
     </div>
 <div id="sunCount" class='sunCount'>
@@ -63,7 +62,7 @@
 </div>
 </footer>
 <script type='text/javascript' src='testtask-helpers.js'></script>
-<script type='text/javascript' src='test-functions.js'></script>
 <script type="text/javascript" src="index.js"></script>
+<script type='text/javascript' src='test-functions.js'></script>
 </body>
 </html>

@@ -1,41 +1,42 @@
-let template = document.querySelector('#cloud-temp');
-let addBtn = document.querySelector('#add');
-let cloudContainer = document.querySelector("#cloud-container")
-let text = document.querySelector('#inputField');
+let template = document.querySelector("#cloud-temp");
+let addBtn = document.querySelector("#add");
+let cloudContainer = document.querySelector("#cloud-container");
+let text = document.querySelector("#inputField");
+
 console.log(addBtn);
 
-let sun = document.querySelector('#sunCount');
-let checkCount = document.querySelector('#checkedCount');
-let totalCount = document.querySelector('#totalCount');
+let sun = document.querySelector("#sunCount");
+let checkCount = document.querySelector("#checkedCount");
+let totalCount = document.querySelector("#totalCount");
 
-let checkNum=0;
-let totalNum=0;
+let checkNum = 0;
+let totalNum = 0;
 
 checkCount.textContent = checkNum;
 
-addBtn.addEventListener('click',() => {
+addBtn.addEventListener("click", () => {
+  if (text.value === "") {
+    return;
+  }
 
-   
-    if(text.value === ''){return;}
-    
-    totalNum += 1;   
-   
-    // checkCount.textContent = checkNum;
-    totalCount.textContent = totalNum;
- 
-   //console.log(checkNum);
-   function addTemplate (){
-       const domFragment = template.content.cloneNode(true);
-       domFragment.querySelector("#cloud-p").textContent = text.value
-       
-       cloudContainer.append(domFragment); 
-    }
-    
-    addTemplate();
-    text.value = "";
-    //let done = cloudContainer.getElementsByClassName(".checkbox");
+  totalNum += 1;
 
-    /*
+  // checkCount.textContent = checkNum;
+  totalCount.textContent = totalNum;
+
+  //console.log(checkNum);
+  function addTemplate() {
+    const domFragment = template.content.cloneNode(true);
+    domFragment.querySelector("#cloud-p").textContent = text.value;
+
+    cloudContainer.append(domFragment);
+  }
+
+  addTemplate();
+  text.value = "";
+  //let done = cloudContainer.getElementsByClassName(".checkbox");
+
+  /*
     let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]")
     checkbox.addEventListener ('click', event => {
         if (event.target.checked){
@@ -43,30 +44,24 @@ addBtn.addEventListener('click',() => {
             checkNum+= 1;
         // console.log(done);
     }*/
-         
-let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]");
 
-checkboxes.forEach( x => x.addEventListener('click', () => {
-
-    function updateDone() {
-        let done = cloudContainer.querySelectorAll("input:checked");
-        checkCount.textContent = done.length;
-    }
-
-    updateDone();
-}
-));
+    let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]");
+    
+    checkboxes.forEach((x) =>
+    x.addEventListener("click", () => {
+        function updateDone() {
+            let done = cloudContainer.querySelectorAll("input:checked");
+            checkCount.textContent = done.length;
+        }
+        
+        updateDone();
+    })
+    );
 });
-
-
-
-
-
-
-
-
-
-
-
-
+// let bin = document.querySelector(".img__bin");
+document.addEventListener("click", (event) => {
+if (event.target.className === '.img__bin'){
+//   event.target.parentNode.remove();
+console.log('hello')}
+});
 

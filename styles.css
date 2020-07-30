@@ -70,8 +70,15 @@ body {
     background-color:var(--sky);
 }
 
-
+#cloud-container{
+    /* border:var(--border); */
+    width:100vw;
+    flex-wrap:wrap;
+    display:flex;
+    flex-direction:row;
+}
 .task-container {
+    border:var(--border);
     background-color: #FFFEFF;
     border-radius: 5px;
     margin-top: 9vh;

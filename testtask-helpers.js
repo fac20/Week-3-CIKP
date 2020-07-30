@@ -24,3 +24,12 @@ function test(name, testFunction) {
     testFunction(assertions);
     console.groupEnd(name);
   }
+
+function reset() {
+  checkCount.textContent = "0";
+  totalCount.textContent = "0";
+        totalNum = 0;
+        while (cloudContainer.firstChild) {
+        cloudContainer.removeChild(cloudContainer.firstChild);
+        }
+}

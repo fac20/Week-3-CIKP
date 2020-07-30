@@ -1,6 +1,7 @@
 :root{
     --border: #fff27c solid 3px;
     --sun: #fff27c;
+    --sky: #61CEEB;
 }
 .navBar {
     display: flex; 
@@ -22,12 +23,13 @@ footer{
     position:fixed;
     height:15vh;
     bottom:0;
-    border: black solid 3px;
+    /* border: black solid 3px; */
     left: 0;
     width: 100vw;
     /* background-color: red; */
     color: black;
     font-size:1.7em;
+    background-color:var(--sky);
   
 }
 .addImg{
@@ -56,8 +58,8 @@ footer{
     text-align: center;
 }
     
-.img__bin {
-    width: 30px;
+#img__bin {
+    width: 1em;
 }
 
 body {
@@ -65,11 +67,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #61CEEB;
+    background-color:var(--sky);
 }
 
 
-li {
+.task-container {
     background-color: #FFFEFF;
     border-radius: 5px;
     margin-top: 9vh;
@@ -77,11 +79,11 @@ li {
     align-items: center;
 }
 
-li > p {
+.task-container > p {
     padding: 0 0.5rem;
 }
 
-li > img {
+.task-container > img {
     padding: 0 0.5rem;
 }
 

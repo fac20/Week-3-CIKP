@@ -1,28 +1,26 @@
-function test(name,testFunction){
-
-    function equal(a,b,emessage){
-        const emessage = `Expected ${a} to equal ${b}`;
-        if(x===y){
-            console.info('pass' + emessage);
-        }else {
-            console.error('fail' + emessage )
-        }
+function test(name, testFunction) {
+    function equal(x, y, message = `Expected ${x} to equal ${y}`) {
+      if (x === y) {
+        console.info("Pass: " + message);
+      } else {
+        console.error("Fail: " + message);
+      }
     }
-    function notequal (a,b,nemessage){
-        const nemessage = `Expected ${a} is not equal to ${b}`;
-        if(x!==y){
-            console.info('pass' + nemessage);
-        }else {
-            console.error('fail' + nemessage )
-        }
+  
+    function notEqual(x, y, message = `Expected ${x} not to equal ${y}`) {
+      if (x !== y) {
+        console.info("Pass: " + message);
+      } else {
+        console.error("Fail: " + message);
+      }
     }
+  
     const assertions = {
-        equal,
-        notequal
-    }
+      equal,
+      notEqual,
+    };
+  
     console.group(name);
     testFunction(assertions);
     console.groupEnd(name);
-}
-
-
+  }

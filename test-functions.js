@@ -12,6 +12,7 @@
     })
 
     test("Has another cloud been added to total?", t => {
+        text.value = "new test";
         addBtn.click();
         const result = totalCount.textContent
         const expected = "1";
@@ -23,7 +24,9 @@
         })
 
     test("Has a second cloud been added to total?", t => {
+        text.value = "new test";
         addBtn.click();
+        text.value = "new test";
         addBtn.click();
         const result = totalCount.textContent
         const expected = "2";
@@ -52,12 +55,16 @@
         console.log(result, expected);
         t.equal(result, expected);
         // reset
-        // totalCount.textContent = "0";
-        // totalNum = 0;
-        // while (cloudContainer.firstChild) {
-        // cloudContainer.removeChild(cloudContainer.firstChild);
-        // }
+        totalCount.textContent = "0";
+        totalNum = 0;
+        while (cloudContainer.firstChild) {
+        cloudContainer.removeChild(cloudContainer.firstChild);
+        }
     })
-
+    test("is number of checked tasks equal to number of tasks ", t => {
+        const result = checkCount.value;
+        const expected = totalCount.value;
+        t.equal(result, expected);
+    })
 
 

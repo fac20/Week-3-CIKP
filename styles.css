@@ -1,6 +1,6 @@
 :root {
-  --border: #fff27c solid 3px;
-  --sun: #fff27c;
+  --border: #F6F49F solid 3px;
+  --sun: #F6F49F;
   --sky: #61ceeb;
 }
 
@@ -30,7 +30,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100vw;
-  color: black;
+  color: #242B46;
   font-size: 1.7em;
   background-color: var(--sky);
 }
@@ -46,10 +46,11 @@ footer {
   flex-direction: row;
   width: 7vw;
   height: 10vh;
-  background: #fff27c;
+  background: #F6F49F;
   border-radius: 50%;
   border: var(--border);
   margin: 2vw;
+  font-size: 2rem;
 }
 
 .checkedCount, .totalCount, .dashDivider {
@@ -59,9 +60,6 @@ footer {
   text-align: center;
 }
 
-#img__bin {
-  width: 1em;
-}
 
 body {
   display: flex;
@@ -69,6 +67,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--sky);
+  color: #242B46;
 }
 
 #cloud-container {
@@ -83,6 +82,7 @@ body {
   margin-top: 9vh;
   display: flex;
   align-items: center;
+
 }
 
 .task-container > p {
@@ -106,19 +106,57 @@ body {
   margin: 1rem;
 }
 
-#cloud-p {
-  overflow-y: scroll;
-  display: inline-block;
-  overflow-wrap: break-word;
-  max-width: 7vw;
-  max-height: 7vh;
+.green-cloud {
+    background-image: url("images/Clouds-green.svg");
 }
+
+.green-background {
+    background-color: #75E3D0;
+}
+
+.checkbox {
+  transform: scale(2);
+  margin: 1rem;
+}
+
+.p__cloud {
+    overflow-y: scroll;
+    display: inline-block;
+    overflow-wrap: break-word;
+    max-width: 13vw;
+    max-height: 7vh;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  #img__bin {
+    width: 2em;
+    margin-left: 0.6rem;
+  }
+  
+.input__task{
+    font-size: 2rem;
+}
+
+.button_add {
+    font-size: 2rem;
+}
+
 
 @media only screen and (max-width: 1024px) {
   .div-cloud {
     width: 45vw;
     height: 30vh;
   }
+
+  .addImg {
+    width: 40vw;
+  }
+
+  .sunCount {
+    width: 12vw;
+    font-size: 1.5em;
+}
 }
 
 @media only screen and (max-width: 640px) {
@@ -127,10 +165,27 @@ body {
     height: 40vh;
   }
 
-  #cloud-p {
+  .p__cloud {
     max-width: 20vw;
     max-height: 5vh;
   }
+
+  .input__task{
+    font-size: 0.7rem;
+}
+
+.button_add {
+    font-size: 1rem;
+}
+
+.addImg {
+    width: 35vw;
+  }
+
+.sunCount {
+    width: 15vw;
+}
+
 }
 
 

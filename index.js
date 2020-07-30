@@ -26,14 +26,21 @@ addBtn.addEventListener("click", () => {
 
   totalNum += 1;
 
-
   totalCount.textContent = totalNum;
 
   function addTemplate() {
     const domFragment = template.content.cloneNode(true);
     domFragment.querySelector("#cloud-p").textContent = text.value;
 
+    let bin = domFragment.querySelector("#img__bin");
+    bin.addEventListener("click", () => {
+        event.target.parentNode.parentNode.remove()
+        totalNum -= 1;
+        totalCount.textContent = totalNum;
+    })
+    
     cloudContainer.append(domFragment);
+    
   }
 
   addTemplate();
@@ -49,13 +56,19 @@ addBtn.addEventListener("click", () => {
       }
 
       updateDone();
+
+      if (event.target.checked) {
+        event.target.parentNode.parentNode.classList.add("green-cloud");
+        event.target.parentNode.classList.add("green-background");
+        console.log("ya checked t");
+      }
+
+      if (!event.target.checked) {
+        event.target.parentNode.parentNode.classList.remove("green-cloud");
+        event.target.parentNode.classList.remove("green-background");
+      }
     })
   );
-});
 
-document.addEventListener("click", (event) => {
-  if (event.target.className === ".img__bin") {
 
-    console.log("hello");
-  }
 });

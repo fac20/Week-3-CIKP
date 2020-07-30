@@ -26,7 +26,7 @@
     test("Has a second cloud been added to total?", t => {
         text.value = "new test";
         addBtn.click();
-        text.value = "new test";
+        text.value = "new test"; 
         addBtn.click();
         const result = totalCount.textContent
         const expected = "2";
@@ -61,9 +61,13 @@
         cloudContainer.removeChild(cloudContainer.firstChild);
         }
     })
-    test("is number of checked tasks equal to number of tasks ", t => {
+
+    test("Does completed tasks increase by 1 after checking task off ", t => {
+        text.value = "new test";
+        addBtn.click();
+        document.querySelector("input[id=checkbox]").checked = true;
         const result = checkCount.value;
-        const expected = totalCount.value;
+        const expected = "1";
         t.equal(result, expected);
     })
 

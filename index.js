@@ -15,10 +15,7 @@ checkCount.textContent = checkNum;
 
 addBtn.addEventListener('click',() => {
 
-    function updateDone() {
-        let done = cloudContainer.querySelectorAll("input:checked");
-        checkCount.textContent = done.length;
-    }
+   
     if(text.value === ''){return;}
     
     totalNum += 1;   
@@ -51,7 +48,10 @@ let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]");
 
 checkboxes.forEach( x => x.addEventListener('click', () => {
 
-    //end of update function
+    function updateDone() {
+        let done = cloudContainer.querySelectorAll("input:checked");
+        checkCount.textContent = done.length;
+    }
 
     updateDone();
 }
@@ -61,19 +61,6 @@ checkboxes.forEach( x => x.addEventListener('click', () => {
 
 
 
-/*select all checkboxes in cloud container
-
-//loop over this list and add event listeners to each one 
-
-//in this listener, run update Done
-
-
-    
-//
-
-}
-
-*/
 
 
 

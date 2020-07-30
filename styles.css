@@ -3,6 +3,7 @@
     --sun: #fff27c;
     --sky: #61CEEB;
 }
+
 .navBar {
     display: flex; 
     justify-content: space-between;
@@ -97,7 +98,6 @@ body {
 
 .div-cloud {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border: solid blue 1px; */
@@ -107,6 +107,35 @@ body {
     background-size: contain;
     background-position: center;
     width: 45vw;
-    height: 30vh;
+    height: 45vh;
     margin: 1rem;
+}
+
+#cloud-p {
+    overflow-y: scroll;
+    display: inline-block;
+    overflow-wrap: break-word;
+    max-width: 7vw;
+    max-height: 7vh;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .div-cloud{
+        width: 45vw;
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .div-cloud{
+    width: 60vw;
+    height: 40vh;
+    }
+
+    #cloud-p {
+        max-width: 20vw;
+        max-height: 5vh;
+    }
+
 }

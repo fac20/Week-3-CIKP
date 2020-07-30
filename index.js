@@ -32,7 +32,15 @@ addBtn.addEventListener("click", () => {
     const domFragment = template.content.cloneNode(true);
     domFragment.querySelector("#cloud-p").textContent = text.value;
 
+    let bin = domFragment.querySelector("#img__bin");
+    bin.addEventListener("click", () => {
+        event.target.parentNode.parentNode.remove()
+        totalNum -= 1;
+        totalCount.textContent = totalNum;
+    })
+    
     cloudContainer.append(domFragment);
+    
   }
 
   addTemplate();
@@ -61,10 +69,6 @@ addBtn.addEventListener("click", () => {
       }
     })
   );
-});
 
-document.addEventListener("click", (event) => {
-  if (event.target.className === ".img__bin") {
-    console.log("hello");
-  }
+
 });

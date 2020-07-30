@@ -32,11 +32,8 @@
         const expected = "2";
         t.equal(result, expected);
         // resets dom state 
-        totalCount.textContent = "0";
-        totalNum = 0;
-        while (cloudContainer.firstChild) {
-        cloudContainer.removeChild(cloudContainer.firstChild);
-    }
+        reset();
+    
     })
 
     test("Is cloud-container selected?", t => {
@@ -55,20 +52,17 @@
         console.log(result, expected);
         t.equal(result, expected);
         // reset
-        totalCount.textContent = "0";
-        totalNum = 0;
-        while (cloudContainer.firstChild) {
-        cloudContainer.removeChild(cloudContainer.firstChild);
-        }
+        reset();
     })
 
     test("Does completed tasks increase by 1 after checking task off ", t => {
         text.value = "new test";
         addBtn.click();
-        document.querySelector("input[id=checkbox]").checked = true;
-        const result = checkCount.value;
+        document.querySelector("input[id=checkbox]").click();
+        const result = checkCount.textContent;
         const expected = "1";
         t.equal(result, expected);
+        reset();
     })
 
 

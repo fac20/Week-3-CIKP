@@ -73,9 +73,10 @@ body {
 #cloud-container{
     /* border:var(--border); */
     width:100vw;
-    flex-wrap:wrap;
-    display:flex;
-    flex-direction:row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    /*flex-direction:row; */
 }
 .task-container {
     border:var(--border);
@@ -105,6 +106,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 50vw;
-    height: 50vh;
+    width: 45vw;
+    height: 30vh;
+    margin: 1rem;
 }

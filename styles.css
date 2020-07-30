@@ -1,148 +1,136 @@
-:root{
-    --border: #fff27c solid 3px;
-    --sun: #fff27c;
-    --sky: #61CEEB;
+:root {
+  --border: #fff27c solid 3px;
+  --sun: #fff27c;
+  --sky: #61ceeb;
 }
 
 .navBar {
-    display: flex; 
-    justify-content: space-between;
-    flex-direction: row;   
-    width:100vw;
-    position:fixed;
-    top:0;
-    border:var(--border);
-    
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  border: var(--border);
 }
-/* .inputField{
-    
-} */
 
 .addImg {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 .hidden {
-    display: none;
-}
-footer{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    position:fixed;
-    height:12vh;
-    bottom:0;
-    /* border: black solid 3px; */
-    left: 0;
-    width: 100vw;
-    /* background-color: red; */
-    color: black;
-    font-size:1.7em;
-    background-color:var(--sky);
-  
-}
-.addImg{
-    width:20vw;
+  display: none;
 }
 
-.sunCount{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width:7vw;
-    height:10vh; 
-    background:#fff27c;
-    border-radius:50%;
-    border:var(--border);
-    margin:2vw;
-
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 12vh;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  color: black;
+  font-size: 1.7em;
+  background-color: var(--sky);
 }
 
-.checkedCount, .totalCount, .dashDivider{
-    /* border:var(--border); */
-    background:var(--sun);
-    width:7vw;
-    height:3vh;
-    text-align: center;
+.addImg {
+  width: 20vw;
 }
-    
+
+.sunCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 7vw;
+  height: 10vh;
+  background: #fff27c;
+  border-radius: 50%;
+  border: var(--border);
+  margin: 2vw;
+}
+
+.checkedCount, .totalCount, .dashDivider {
+  background: var(--sun);
+  width: 7vw;
+  height: 3vh;
+  text-align: center;
+}
+
 #img__bin {
-    width: 1em;
+  width: 1em;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:var(--sky);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sky);
 }
 
-#cloud-container{
-    /* border:var(--border); */
-    width:100vw;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    /*flex-direction:row; */
+#cloud-container {
+  width: 100vw;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 .task-container {
-    border:var(--border);
-    background-color: #FFFEFF;
-    border-radius: 5px;
-    margin-top: 9vh;
-    display: flex;
-    align-items: center;
+  border: var(--border);
+  background-color: #fffeff;
+  border-radius: 5px;
+  margin-top: 9vh;
+  display: flex;
+  align-items: center;
 }
 
 .task-container > p {
-    padding: 0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .task-container > img {
-    padding: 0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .div-cloud {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: solid blue 1px; */
-
-    background-image: url("images/Clouds.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 45vw;
-    height: 45vh;
-    margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/Clouds.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 45vw;
+  height: 45vh;
+  margin: 1rem;
 }
 
 #cloud-p {
-    overflow-y: scroll;
-    display: inline-block;
-    overflow-wrap: break-word;
-    max-width: 7vw;
-    max-height: 7vh;
+  overflow-y: scroll;
+  display: inline-block;
+  overflow-wrap: break-word;
+  max-width: 7vw;
+  max-height: 7vh;
 }
 
-
 @media only screen and (max-width: 1024px) {
-    .div-cloud{
-        width: 45vw;
-        height: 30vh;
-    }
+  .div-cloud {
+    width: 45vw;
+    height: 30vh;
+  }
 }
 
 @media only screen and (max-width: 640px) {
-    .div-cloud{
+  .div-cloud {
     width: 60vw;
     height: 40vh;
-    }
+  }
 
-    #cloud-p {
-        max-width: 20vw;
-        max-height: 5vh;
-    }
-
-} 
+  #cloud-p {
+    max-width: 20vw;
+    max-height: 5vh;
+  }
+}

@@ -4,12 +4,11 @@ let cloudContainer = document.querySelector("#cloud-container");
 let text = document.querySelector("#inputField");
 
 console.log(addBtn);
-let plusButton = document.querySelector(".addImg")
+let plusButton = document.querySelector(".addImg");
 
-plusButton.addEventListener("click", () => 
-{
-    document.querySelector("#enterTask").classList.toggle("hidden");
-})
+plusButton.addEventListener("click", () => {
+  document.querySelector("#enterTask").classList.toggle("hidden");
+});
 
 let sun = document.querySelector("#sunCount");
 let checkCount = document.querySelector("#checkedCount");
@@ -27,10 +26,9 @@ addBtn.addEventListener("click", () => {
 
   totalNum += 1;
 
-  // checkCount.textContent = checkNum;
+
   totalCount.textContent = totalNum;
 
-  //console.log(checkNum);
   function addTemplate() {
     const domFragment = template.content.cloneNode(true);
     domFragment.querySelector("#cloud-p").textContent = text.value;
@@ -40,34 +38,24 @@ addBtn.addEventListener("click", () => {
 
   addTemplate();
   text.value = "";
-  //let done = cloudContainer.getElementsByClassName(".checkbox");
 
-  /*
-    let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]")
-    checkbox.addEventListener ('click', event => {
-        if (event.target.checked){
-            //checkNum.textContent = done.length;
-            checkNum+= 1;
-        // console.log(done);
-    }*/
+  let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]");
 
-    let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]");
-    
-    checkboxes.forEach((x) =>
+  checkboxes.forEach((x) =>
     x.addEventListener("click", () => {
-        function updateDone() {
-            let done = cloudContainer.querySelectorAll("input:checked");
-            checkCount.textContent = done.length;
-        }
-        
-        updateDone();
+      function updateDone() {
+        let done = cloudContainer.querySelectorAll("input:checked");
+        checkCount.textContent = done.length;
+      }
+
+      updateDone();
     })
-    );
-});
-// let bin = document.querySelector(".img__bin");
-document.addEventListener("click", (event) => {
-if (event.target.className === '.img__bin'){
-//   event.target.parentNode.remove();
-console.log('hello')}
+  );
 });
 
+document.addEventListener("click", (event) => {
+  if (event.target.className === ".img__bin") {
+
+    console.log("hello");
+  }
+});

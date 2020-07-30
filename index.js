@@ -4,6 +4,12 @@ let cloudContainer = document.querySelector("#cloud-container");
 let text = document.querySelector("#inputField");
 
 console.log(addBtn);
+let plusButton = document.querySelector(".addImg")
+
+plusButton.addEventListener("click", () => 
+{
+    document.querySelector("#enterTask").classList.toggle("hidden");
+})
 
 let sun = document.querySelector("#sunCount");
 let checkCount = document.querySelector("#checkedCount");

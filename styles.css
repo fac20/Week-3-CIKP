@@ -3,6 +3,7 @@
     --sun: #fff27c;
     --sky: #61CEEB;
 }
+
 .navBar {
     display: flex; 
     justify-content: space-between;
@@ -16,12 +17,19 @@
 /* .inputField{
     
 } */
+
+.addImg {
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
 footer{
     display:flex;
     justify-content: space-between;
     align-items: center;
     position:fixed;
-    height:15vh;
+    height:12vh;
     bottom:0;
     /* border: black solid 3px; */
     left: 0;
@@ -73,9 +81,10 @@ body {
 #cloud-container{
     /* border:var(--border); */
     width:100vw;
-    flex-wrap:wrap;
-    display:flex;
-    flex-direction:row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    /*flex-direction:row; */
 }
 .task-container {
     border:var(--border);
@@ -96,7 +105,6 @@ body {
 
 .div-cloud {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border: solid blue 1px; */
@@ -105,6 +113,36 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 50vw;
-    height: 50vh;
+    width: 45vw;
+    height: 45vh;
+    margin: 1rem;
 }
+
+#cloud-p {
+    overflow-y: scroll;
+    display: inline-block;
+    overflow-wrap: break-word;
+    max-width: 7vw;
+    max-height: 7vh;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .div-cloud{
+        width: 45vw;
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .div-cloud{
+    width: 60vw;
+    height: 40vh;
+    }
+
+    #cloud-p {
+        max-width: 20vw;
+        max-height: 5vh;
+    }
+
+} 

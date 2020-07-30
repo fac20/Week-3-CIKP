@@ -24,8 +24,9 @@ Project name is a '' that allows the user  to create tasks and delete tasks.
 
 
 ## Contributors
-- Terrance 
-- Terry 
-- Jennifer 
-- Ephie 
+- [Terrence](https://github.com/Netceer)
+- [Glenroy-Terence (Terry)](https://github.com/RunGT)
+- [Jennifer](https://github.com/jenndroid)
+- [Ephie](https://github.com/ephieo)
+
 

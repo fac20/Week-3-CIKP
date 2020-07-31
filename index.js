@@ -72,3 +72,7 @@ addBtn.addEventListener("click", () => {
 
 
 });
+
+text.value = "new test";
+  addBtn.click();
+  document.querySelector("input[id=checkbox]").click();

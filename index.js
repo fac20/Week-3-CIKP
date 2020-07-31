@@ -3,7 +3,6 @@ let addBtn = document.querySelector("#add");
 let cloudContainer = document.querySelector("#cloud-container");
 let text = document.querySelector("#inputField");
 
-console.log(addBtn);
 let plusButton = document.querySelector(".addImg");
 
 plusButton.addEventListener("click", () => {
@@ -22,13 +21,13 @@ checkCount.textContent = checkNum;
 addBtn.addEventListener("click", () => {
   if (text.value === "") {
     return;
-  }
+}
 
   totalNum += 1;
 
   totalCount.textContent = totalNum;
 
-  function addTemplate() {
+function addTemplate() {
     const domFragment = template.content.cloneNode(true);
     domFragment.querySelector("#cloud-p").textContent = text.value;
 
@@ -39,9 +38,8 @@ addBtn.addEventListener("click", () => {
         totalCount.textContent = totalNum;
     })
     
-    cloudContainer.append(domFragment);
-    
-  }
+    cloudContainer.append(domFragment);    
+}
 
   addTemplate();
   text.value = "";
@@ -50,12 +48,9 @@ addBtn.addEventListener("click", () => {
 
   checkboxes.forEach((x) =>
     x.addEventListener("click", () => {
-      function updateDone() {
         let done = cloudContainer.querySelectorAll("input:checked");
         checkCount.textContent = done.length;
-      }
-
-      updateDone();
+   
 
       if (event.target.checked) {
         event.target.parentNode.parentNode.classList.add("green-cloud");

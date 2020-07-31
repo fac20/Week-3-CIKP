@@ -6,16 +6,21 @@ We have built [Cloudy With a Chance of Tasks](https://fac20.github.io/Week-3-CIK
 
 ## User stories
 
-On the landing page, select the plus icon to bring up the hidden task writing field
+### On the landing page, select the plus icon to bring up the hidden task writing field
 
-![Opening-Page](https://user-images.githubusercontent.com/27979883/89013343-a126d880-d30b-11ea-961e-caa912b44162.png)
+![Opening-Page](https://user-images.githubusercontent.com/27979883/89013343-a126d880-d30b-11ea-961e-caa912b44162.png =150x)
 
 
-Write your task and select 'Add' to create a cloud with your task on it and add it to the total amount displayed in the bottom right corner
+### Write your task and select 'Add' to create a cloud with your task on it and add it to the total amount displayed in the bottom right corner
 
-When the task is completed, select the checkbox to indicate that
+![Adding-Task](https://user-images.githubusercontent.com/27979883/89013391-b439a880-d30b-11ea-8829-95d54fb631e1.png =150x)
 
-Or if you no longer need to do the task, just bin it 
+
+### When the task is completed, select the checkbox to indicate that
+
+![Checking-Off-Task](https://user-images.githubusercontent.com/27979883/89013453-d16e7700-d30b-11ea-969b-f5307f55858b.png =150x)
+
+Or if you no longer need to do the task, just bin it!
 
 ### Core
  - As an busy person, I want to: add tasks to a list so that I can keep track of them

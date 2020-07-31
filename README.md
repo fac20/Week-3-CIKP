@@ -8,6 +8,9 @@ We have built [Cloudy With a Chance of Tasks](https://fac20.github.io/Week-3-CIK
 
 On the landing page, select the plus icon to bring up the hidden task writing field
 
+![Opening-Page](https://user-images.githubusercontent.com/27979883/89013343-a126d880-d30b-11ea-961e-caa912b44162.png)
+
+
 Write your task and select 'Add' to create a cloud with your task on it and add it to the total amount displayed in the bottom right corner
 
 When the task is completed, select the checkbox to indicate that

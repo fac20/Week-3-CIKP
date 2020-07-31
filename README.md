@@ -8,17 +8,17 @@ We have built [Cloudy With a Chance of Tasks](https://fac20.github.io/Week-3-CIK
 
 ### On the landing page, select the plus icon to bring up the hidden task writing field
 
-![Opening-Page](https://user-images.githubusercontent.com/27979883/89013343-a126d880-d30b-11ea-961e-caa912b44162.png =150x)
+![Opening-Page](https://user-images.githubusercontent.com/27979883/89013343-a126d880-d30b-11ea-961e-caa912b44162.png)
 
 
 ### Write your task and select 'Add' to create a cloud with your task on it and add it to the total amount displayed in the bottom right corner
 
-![Adding-Task](https://user-images.githubusercontent.com/27979883/89013391-b439a880-d30b-11ea-8829-95d54fb631e1.png =150x)
+![Adding-Task](https://user-images.githubusercontent.com/27979883/89013391-b439a880-d30b-11ea-8829-95d54fb631e1.png)
 
 
 ### When the task is completed, select the checkbox to indicate that
 
-![Checking-Off-Task](https://user-images.githubusercontent.com/27979883/89013453-d16e7700-d30b-11ea-969b-f5307f55858b.png =150x)
+![Checking-Off-Task](https://user-images.githubusercontent.com/27979883/89013453-d16e7700-d30b-11ea-969b-f5307f55858b.png)
 
 Or if you no longer need to do the task, just bin it!
 

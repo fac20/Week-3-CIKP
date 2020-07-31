@@ -11,6 +11,7 @@
   width: 100vw;
   position: fixed;
   top: 0;
+ 
 }
 
 .addImg {
@@ -62,7 +63,7 @@ footer {
 
 
 body {
-   
+  scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +111,7 @@ color:#232b46;
   margin: 1rem;
   margin-top:7vh;
 }
-
+#F6F49F
 .green-cloud {
     background-image: url("images/Clouds-green.svg");
 }
@@ -119,6 +120,15 @@ color:#232b46;
     background-color: #75E3D0;
     /* background:#F6F49F; */
 }
+
+.yellow-cloud {
+  background-image: url("images/Clouds-yellow.svg");
+}
+
+.yellow-background {
+  background-color: var(--sun);
+}
+
 
 .checkbox {
   transform: scale(2);
@@ -180,11 +190,19 @@ color:#232b46;
     width: 60vw;
     height: 40vh;
   }
+  .navBar{
+    justify-content: flex-start;
+  }
 
   .p__cloud {
     max-width: 20vw;
     max-height: 5vh;
     font-size:15px;
+
+  }
+  .logoimg{
+    width:20vw;
+    height:10vh;
 
   }
 

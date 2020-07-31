@@ -48,6 +48,9 @@ addBtn.addEventListener("click", () => {
     
     cloudContainer.append(domFragment);    
 
+
+  cloudContainer.lastElementChild.scrollIntoView({ behavior: 'smooth' });
+
   text.value = "";
 
   let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]");
@@ -59,13 +62,13 @@ addBtn.addEventListener("click", () => {
    
 
       if (event.target.checked) {
-        event.target.parentNode.parentNode.classList.add("green-cloud");
-        event.target.parentNode.classList.add("green-background");
+        event.target.parentNode.parentNode.classList.add("yellow-cloud");
+        event.target.parentNode.classList.add("yellow-background");
       }
 
       if (!event.target.checked) {
-        event.target.parentNode.parentNode.classList.remove("green-cloud");
-        event.target.parentNode.classList.remove("green-background");
+        event.target.parentNode.parentNode.classList.remove("yellow-cloud");
+        event.target.parentNode.classList.remove("yellow-background");
       }
     })
   );

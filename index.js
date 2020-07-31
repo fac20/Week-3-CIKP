@@ -27,7 +27,6 @@ addBtn.addEventListener("click", () => {
 
   totalCount.textContent = totalNum;
 
-function addTemplate() {
     const domFragment = template.content.cloneNode(true);
     domFragment.querySelector("#cloud-p").textContent = text.value;
 
@@ -39,9 +38,8 @@ function addTemplate() {
     })
     
     cloudContainer.append(domFragment);    
-}
 
-  addTemplate();
+
   text.value = "";
 
   let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]");

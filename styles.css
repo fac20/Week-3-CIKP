@@ -111,7 +111,7 @@ color:#232b46;
   margin: 1rem;
   margin-top:7vh;
 }
-
+#F6F49F
 .green-cloud {
     background-image: url("images/Clouds-green.svg");
 }
@@ -120,6 +120,15 @@ color:#232b46;
     background-color: #75E3D0;
     /* background:#F6F49F; */
 }
+
+.yellow-cloud {
+  background-image: url("images/Clouds-yellow.svg");
+}
+
+.yellow-background {
+  background-color: var(--sun);
+}
+
 
 .checkbox {
   transform: scale(2);

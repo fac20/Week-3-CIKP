@@ -58,14 +58,13 @@ addBtn.addEventListener("click", () => {
       updateDone();
 
       if (event.target.checked) {
-        event.target.parentNode.parentNode.classList.add("green-cloud");
-        event.target.parentNode.classList.add("green-background");
-        console.log("ya checked t");
+        event.target.parentNode.parentNode.classList.add("yellow-cloud");
+        event.target.parentNode.classList.add("yellow-background");
       }
 
       if (!event.target.checked) {
-        event.target.parentNode.parentNode.classList.remove("green-cloud");
-        event.target.parentNode.classList.remove("green-background");
+        event.target.parentNode.parentNode.classList.remove("yellow-cloud");
+        event.target.parentNode.classList.remove("yellow-background");
       }
     })
   );

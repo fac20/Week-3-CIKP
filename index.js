@@ -44,6 +44,7 @@ addBtn.addEventListener("click", () => {
   }
 
   addTemplate();
+  cloudContainer.lastElementChild.scrollIntoView({ behavior: 'smooth' });
   text.value = "";
 
   let checkboxes = cloudContainer.querySelectorAll("input[id=checkbox]");
@@ -71,7 +72,3 @@ addBtn.addEventListener("click", () => {
 
 
 });
-
-text.value = "new test";
-  addBtn.click();
-  document.querySelector("input[id=checkbox]").click();

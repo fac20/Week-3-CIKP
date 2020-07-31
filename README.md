@@ -16,10 +16,10 @@ We have built [Cloudy With a Chance of Tasks](https://fac20.github.io/Week-3-CIK
 ## User Stories
 
 ### Core
- - As an busy person, I want to: add tasks to a list so that I can keep track of them :+1:
- - Check things off my list so I can see what I've done :+1:
- - Delete things from the list if I don't need to do them anymore :+1:
- - As a motor-impaired person, I want to: use all the features of the app without a mouse :+1:
+ - As an busy person, I want to: add tasks to a list so that I can keep track of them :white_check_mark:
+ - Check things off my list so I can see what I've done :white_check_mark:
+ - Delete things from the list if I don't need to do them anymore :white_check_mark:
+ - As a motor-impaired person, I want to: use all the features of the app without a mouse :white_check_mark:
  
 ### Stretch
  - As a busy person, I want to: filter out completed to-dos from my list so that I can focus on what's left to do
